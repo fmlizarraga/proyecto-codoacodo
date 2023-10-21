@@ -1,0 +1,230 @@
+body {
+    position: absolute;
+    background-color: #87CEEB; /* Color de fondo */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+main {
+    margin-top: 75px;
+    padding: 10px 20px 20px 20px;
+}
+
+#logotext {
+    text-decoration: none;
+    margin-left: 5px;
+    font-family: Roboto, system-ui;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 1px #3f434a;
+}
+
+.corplogo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.corplogo:hover {
+    transform :scale(1.03);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: flex;
+    place-content: space-between;
+    width: 100%;
+    background-color: #292945;
+    padding: 10px 0 10px 0;
+    z-index: 100;
+    max-height: 100%;
+}
+
+.header-element {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    transition: all 0.2s;
+}
+
+.navlinks ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: all 0.35s;
+}
+
+.navlinks ul li a {
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+.navlinks ul li a:hover {
+    color: #FFB347;
+    font-size: 0.95em;
+}
+
+#menu, #menu-check {
+    text-align: right;
+    display: none;
+}
+
+.header-element ul li {
+    display: inline;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 900px) {
+    header, header ul, header ul li {
+        display: inline;
+    }
+
+    main {
+        margin-top: 125px;
+        margin-bottom: 75px;
+    }
+    .navlinks, .navlinks ul {
+        display: flex;
+        text-align: center;
+        width: calc(100% - 40px);
+        align-items: center;
+        place-content: space-between;
+        padding: 10px;
+    }
+    .navlinks ul {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .navlinks ul li {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .navlinks ul li a {
+        margin-left: 0;
+    }
+}
+
+/* @media only screen and (max-width: 400px) {
+    #logotext {
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 700px) {
+    main {
+        margin-top: 55px;
+    }
+
+    .corplogo {
+        display: inline-flex;
+        width: calc(100% - 60px);
+    }
+
+    .header-element {
+        padding: 0;
+        margin-right: 10px;
+    }
+    
+    #menu-check:not(:checked) ~ nav {
+        display: none;
+    }
+
+    #menu-check:checked ~ nav {
+        display: block;
+    }
+
+    #menu {
+        display: inline;
+        color: #fff;
+        font-size: 1.3em;
+        /* border: 3px solid #fff; */
+        z-index: 999;
+        position: inherit;
+        transition: all 0.5s;
+    }
+
+    #menu:hover {
+        color: #FFB347;
+    }
+
+    #menu-cerrar {
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir {
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar {
+        display: inline;
+    }
+
+    .navlinks {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #292945;
+        margin: 0;
+        opacity: 0.8;
+    }
+
+    .navlinks ul, .navlinks ul li {
+        display: block;
+        justify-content: stretch;
+        text-align: right;
+        font-size: 1.4em;
+    }
+
+    .navlinks ul li a {
+        padding-right: 10%;
+    }
+}
+
+.main-img {
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;border: solid #fff;
+    border-radius: 10px;
+}
+
+.main-logo {
+    width: 100%;
+    justify-content: center;
+    font-size: 3em;
+    text-align: center;
+}
+
+.main-mapa {
+    margin-left: 10%;
+    width: 60%;
+    height: 300px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.slogan {
+    margin-left: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+.desc-mapa {
+    margin-left: 15%;
+    text-align: center;
+    margin-left: 10%;
+    width: 60%;
+}

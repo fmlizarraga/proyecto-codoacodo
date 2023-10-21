@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #87CEEB;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #FFB347;
+    color: white;
+    padding: 20px;
+}
+.message {
+    padding: 20px;
+}
+.contact-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+.user-image-container {
+    position: relative;
+    max-width: 100px;
+    margin: 10px auto;
+    border: 5px solid #FFB347;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.user-image {
+    max-width: 100%;
+    display: block;
+}
+
+.volver {
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.volver a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(9, 19, 52);
+}
+
+.volver a:hover {
+    color: #fff;
+    font-weight: bold;
+    background-color: #FFB347;
+    border-radius: 10px;
+}

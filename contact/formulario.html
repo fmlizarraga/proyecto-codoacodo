@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="/resouces/favicon.svg" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/d385ce05bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="formulario.css" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header id="header" class="animate__animated animate__backInDown"></header>
+    <main>
+      <div class="formulario animate__animated animate__fadeIn">
+        <h1>Formulario de Contacto</h1>
+        <h2>Ponete en contacto a través de este formulario</h2>
+        <span class="subtitulo">Para una atención personalizada</span>
+        <form id="contactForm">
+          <div class="caja-formulario">
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            /><br />
+          </div>
+          <div class="caja-formulario">
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            /><br />
+          </div>
+          <div class="caja-formulario">
+            <input
+              type="number"
+              id="dni"
+              name="dni"
+              pattern="[0-9]{7,8}"
+              placeholder="DNI Argentino (Ej. 12345678)"
+            /><br />
+          </div>
+          <div class="caja-formulario">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo electrónico"
+            /><br />
+          </div>
+          <input class="boton-enviar" type="submit" value="Enviar" />
+        </form>
+        <div class="contact-info">
+          <h2>O contactanos por uno de estos medios</h2>
+          <ul>
+            <li>Llamando sin cargo a 0800-999-3667</li>
+            <li>Enviando un e-mail a <a href="mailto:contacto@importienda.com.ar">contacto@importienda.com.ar</a></li>
+            <li>Pasando por nuestra sucursal en Av Rivadavia 3201, Ciudad Autonoma de Buenos Aires</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="formulario.js"></script>
+    <script src="../components/header.js"></script>
+  </body>
+</html>

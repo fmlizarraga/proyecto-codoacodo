@@ -1,0 +1,39 @@
+body {
+    min-height: 100vh !important;
+    background-color : #87CEEB; 
+    font-family : Arial;
+    color : Black;
+    
+    }
+
+    h1 {
+        /* text-align: center;  */
+        color: #fff;
+    }
+
+    p, h2 {
+        margin-left: 20px;
+    }
+
+    .box-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #servicios ul{
+        list-style: none;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top: 1px solid rgb(122, 115, 164);
+        background-color: #87CEEB;
+    }
